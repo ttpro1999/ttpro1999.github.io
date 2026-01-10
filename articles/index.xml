@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on C_ultra: Kernel Engineering Blog</title>
+    <link>http://localhost:8080/articles/</link>
+    <description>Recent content in Articles on C_ultra: Kernel Engineering Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Thu, 08 Jan 2026 10:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:8080/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức</title>
+      <link>http://localhost:8080/articles/02_doubly_linked_list_phase1/</link>
+      <pubDate>Thu, 08 Jan 2026 10:00:00 +0700</pubDate>
+      <guid>http://localhost:8080/articles/02_doubly_linked_list_phase1/</guid>
+      <description>Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức (1) Bối cảnh thực tế – Vấn đề mới nảy sinh Sau khi triển khai SLL, kernel chạy ổn định. Nhưng sau vài tháng, một yêu cầu mới xuất hiện: Priority Scheduling.&#xA;Các task giờ không còn chạy theo thứ tự FIFO. Thay vào đó, kernel cần sắp xếp task theo ưu tiên. Khi ISR hoàn thành một task, nó phải xóa task đó khỏi queue chính xác – không phải xóa &amp;ldquo;task có key = x&amp;rdquo;, mà xóa task cụ thể này mà ISR đang cầm con trỏ.</description>
+    </item>
+    <item>
+      <title>Single Linked List – Khi mảng không còn đủ (RTOS perspective)</title>
+      <link>http://localhost:8080/articles/01_single_linked_list/</link>
+      <pubDate>Wed, 07 Jan 2026 11:00:00 +0700</pubDate>
+      <guid>http://localhost:8080/articles/01_single_linked_list/</guid>
+      <description>Single Linked List – Khi mảng không còn đủ (1) Bối cảnh thực tế – Cơn đau bắt đầu Tôi đang xây một bộ lập lịch RTOS cho hệ thống nhúng. Cần quản lý danh sách các tác vụ (task) có thể được tạo ra hoặc kết thúc bất kỳ lúc nào - sô lượng không cố định trước.&#xA;Ban đầu, cách tiếp cận tự nhiên nhất: dùng mảng tĩnh để lưu tasks.</description>
+    </item>
+  </channel>
+</rss>
