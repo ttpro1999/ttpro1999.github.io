@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức | C_ultra: Kernel Engineering Blog</title>
@@ -15,7 +15,7 @@
         header {
             background: #2c3e50;
             color: white;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             border-bottom: 3px solid #3498db;
         }
         header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
@@ -134,8 +134,7 @@
     </div>
     
 
-    <h1 id="doubly-linked-list-phase-1--khi-kernel-cần-xóa-task-ngay-lập-tức">Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức</h1>
-<h2 id="1-bối-cảnh-thực-tế--vấn-đề-mới-nảy-sinh">(1) Bối cảnh thực tế – Vấn đề mới nảy sinh</h2>
+    <h2 id="1-bối-cảnh-thực-tế--vấn-đề-mới-nảy-sinh">(1) Bối cảnh thực tế – Vấn đề mới nảy sinh</h2>
 <p>Sau khi triển khai SLL, kernel chạy ổn định. Nhưng sau vài tháng, một yêu cầu mới xuất hiện: <strong>Priority Scheduling</strong>.</p>
 <p>Các task giờ không còn chạy theo thứ tự FIFO. Thay vào đó, kernel cần sắp xếp task theo ưu tiên. Khi ISR hoàn thành một task, nó phải <strong>xóa task đó khỏi queue chính xác</strong> – không phải xóa &ldquo;task có key = x&rdquo;, mà xóa <strong>task cụ thể này</strong> mà ISR đang cầm con trỏ.</p>
 <p>Scenario cụ thể: Tác vụ A đang chạy. ISR I/O hoàn thành cho task B (ưu tiên cao hơn A). ISR cần:</p>

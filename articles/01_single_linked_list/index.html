@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8080&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Linked List – Khi mảng không còn đủ (RTOS perspective) | C_ultra: Kernel Engineering Blog</title>
@@ -15,7 +15,7 @@
         header {
             background: #2c3e50;
             color: white;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             border-bottom: 3px solid #3498db;
         }
         header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
@@ -134,8 +134,7 @@
     </div>
     
 
-    <h1 id="single-linked-list--khi-mảng-không-còn-đủ">Single Linked List – Khi mảng không còn đủ</h1>
-<h2 id="1-bối-cảnh-thực-tế--cơn-đau-bắt-đầu">(1) Bối cảnh thực tế – Cơn đau bắt đầu</h2>
+    <h2 id="1-bối-cảnh-thực-tế--cơn-đau-bắt-đầu">(1) Bối cảnh thực tế – Cơn đau bắt đầu</h2>
 <p>Tôi đang xây một bộ lập lịch RTOS cho hệ thống nhúng. Cần quản lý danh sách các tác vụ (task) có thể được tạo ra hoặc kết thúc bất kỳ lúc nào - sô lượng không cố định trước.</p>
 <p>Ban đầu, cách tiếp cận tự nhiên nhất: dùng <strong>mảng tĩnh</strong> để lưu tasks. Nó hoạt động tốt cho một vài tác vụ. Nhưng rồi, trong một hệ thống thực, lỗi xảy ra:</p>
 <p><strong>Scenario cụ thể:</strong> Một tác vụ I/O đang chờ đọc file. Khi ISR (interrupt handler) hoàn thành I/O, nó cần xóa tác vụ khỏi danh sách &ldquo;chờ I/O&rdquo; <strong>trong vòng 500ns</strong>. Với mảng, xóa một phần tử ở giữa có nghĩa dồn các phần tử phía sau lên - thao tác O(n). Nếu danh sách có 100 tasks, đó là 100 lệnh assignment trong interrupt handler. Interrupt sẽ bị block quá lâu.</p>
