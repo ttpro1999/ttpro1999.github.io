@@ -1,22 +1,27 @@
-# Embedded Bootcamp Blog
+# C_ultra - Kernel Engineering Blog
 
-Welcome to the Embedded Bootcamp Blog - a resource for embedded systems programming!
+Welcome to the **C_ultra Kernel Engineering Blog** - exploring RTOS, system design, and data structures from first principles.
 
 ## About
 
-This blog covers topics related to embedded systems programming, including:
-- Microcontroller programming (Arduino, STM32, ESP32)
-- Embedded C/C++
-- Hardware interfacing
-- Real-Time Operating Systems
-- IoT and connectivity
-- Best practices for embedded development
+This is the public blog for the C_ultra project, featuring engineering essays on:
+- Single Linked List (SLL)
+- Doubly Linked List (DLL) with Intrusive Pattern
+- Circular Linked Lists
+- Kernel design and architecture
+- Real-Time Operating Systems (RTOS)
+- Data structure implementation with focus on kernel-level constraints
+- ISR latency and deterministic design
 
 ## GitHub Pages
 
-This repository is configured to deploy automatically to GitHub Pages using Jekyll.
+This repository hosts static HTML generated from Hugo. Blog content is deployed automatically to GitHub Pages.
 
 ### Viewing the Blog
+
+Visit: **https://ttpro1999.github.io**
+
+Or locally, open `articles/` folder and view `.html` files directly.
 
 Once deployed, the blog will be available at: `https://ttpro1999.github.io/embedded_bootcamp`
 
