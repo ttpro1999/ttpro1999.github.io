@@ -11,11 +11,16 @@
             line-height: 1.6;
             color: #333;
             background: #f9f9f9;
+            background-image: url('/assets/img/left.png'), url('/assets/img/right.png');
+            background-position: left center, right center;
+            background-repeat: no-repeat, no-repeat;
+            background-attachment: fixed, fixed;
+            background-size: auto 100%, auto 100%;
         }
         header {
             background: #2c3e50;
             color: white;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             border-bottom: 3px solid #3498db;
         }
         header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
@@ -93,9 +98,14 @@
 </head>
 <body>
     <header>
-        <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem; text-align: center;">
             <h1>C_ultra: Kernel Engineering Blog</h1>
-            <p>Kernel Engineering Blog</p>
+            <p style="font-size: 1rem; line-height: 1.5; margin-top: 0.8rem; font-weight: 500; letter-spacing: 0.3px;">
+                Code cho cá nhân - Code cho tổ quốc - Code cho những người đồng chí đã ngã xuống
+            </p>
+            <p style="font-size: 0.95rem; line-height: 1.4; margin-top: 0.5rem; font-style: italic; opacity: 0.95;">
+                Code cho không còn nước nào còn dám khinh thường chúng ta
+            </p>
         </div>
     </header>
     <nav>
