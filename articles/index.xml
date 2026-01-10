@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on C_ultra: Kernel Engineering Blog</title>
+    <title>Articles on Blog này không phải để dạy, blog này để chia sẻ</title>
     <link>http://localhost:1313/articles/</link>
-    <description>Recent content in Articles on C_ultra: Kernel Engineering Blog</description>
+    <description>Recent content in Articles on Blog này không phải để dạy, blog này để chia sẻ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <lastBuildDate>Thu, 08 Jan 2026 10:00:00 +0700</lastBuildDate>
