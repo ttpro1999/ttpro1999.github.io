@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pointer Arithmetic on C_ultra: Kernel Engineering Blog</title>
+    <link>http://localhost:1313/tags/pointer-arithmetic/</link>
+    <description>Recent content in Pointer Arithmetic on C_ultra: Kernel Engineering Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Thu, 08 Jan 2026 10:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pointer-arithmetic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức</title>
+      <link>http://localhost:1313/articles/02_doubly_linked_list_phase1/</link>
+      <pubDate>Thu, 08 Jan 2026 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/articles/02_doubly_linked_list_phase1/</guid>
+      <description>(1) Bối cảnh thực tế – Vấn đề mới nảy sinh Sau khi triển khai SLL, kernel chạy ổn định. Nhưng sau vài tháng, một yêu cầu mới xuất hiện: Priority Scheduling.&#xA;Các task giờ không còn chạy theo thứ tự FIFO. Thay vào đó, kernel cần sắp xếp task theo ưu tiên. Khi ISR hoàn thành một task, nó phải xóa task đó khỏi queue chính xác – không phải xóa &amp;ldquo;task có key = x&amp;rdquo;, mà xóa task cụ thể này mà ISR đang cầm con trỏ.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C_ultra: Kernel Engineering Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on C_ultra: Kernel Engineering Blog</description>
+    <title>RTOS on C_ultra: Kernel Engineering Blog</title>
+    <link>http://localhost:1313/tags/rtos/</link>
+    <description>Recent content in RTOS on C_ultra: Kernel Engineering Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
     <lastBuildDate>Thu, 08 Jan 2026 10:00:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/rtos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức</title>
       <link>http://localhost:1313/articles/02_doubly_linked_list_phase1/</link>

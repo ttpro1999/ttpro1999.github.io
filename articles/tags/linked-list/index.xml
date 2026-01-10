@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linked List on C_ultra: Kernel Engineering Blog</title>
+    <link>http://localhost:1313/tags/linked-list/</link>
+    <description>Recent content in Linked List on C_ultra: Kernel Engineering Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 07 Jan 2026 11:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single Linked List – Khi mảng không còn đủ (RTOS perspective)</title>
+      <link>http://localhost:1313/articles/01_single_linked_list/</link>
+      <pubDate>Wed, 07 Jan 2026 11:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/articles/01_single_linked_list/</guid>
+      <description>(1) Bối cảnh thực tế – Cơn đau bắt đầu Tôi đang xây một bộ lập lịch RTOS cho hệ thống nhúng. Cần quản lý danh sách các tác vụ (task) có thể được tạo ra hoặc kết thúc bất kỳ lúc nào - sô lượng không cố định trước.&#xA;Ban đầu, cách tiếp cận tự nhiên nhất: dùng mảng tĩnh để lưu tasks. Nó hoạt động tốt cho một vài tác vụ.</description>
+    </item>
+  </channel>
+</rss>

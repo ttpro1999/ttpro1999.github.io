@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Embedded on C_ultra: Kernel Engineering Blog</title>
+    <link>http://localhost:1313/tags/embedded/</link>
+    <description>Recent content in Embedded on C_ultra: Kernel Engineering Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 07 Jan 2026 10:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/embedded/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Khám phá C_ultra: Học RTOS Kernel qua Monorepo Độc lập</title>
+      <link>http://localhost:1313/posts/exploring-c-ultra-rtos-kernels/</link>
+      <pubDate>Wed, 07 Jan 2026 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/exploring-c-ultra-rtos-kernels/</guid>
+      <description>Khám phá C_ultra: Học RTOS Kernel qua Monorepo Độc lập Xin chào mọi người! Hôm nay tôi muốn chia sẻ về một dự án thú vị mà tôi đã làm việc trong thời gian gần đây: C_ultra - một kho lưu trữ học tập về các kernel RTOS đa dạng.&#xA;Dự án là gì? C_ultra là một monorepo chứa nhiều kernel RTOS độc lập, được thiết kế để học các khái niệm lập trình hệ thống một cách có hệ thống.</description>
+    </item>
+  </channel>
+</rss>
