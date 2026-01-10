@@ -1,0 +1,36 @@
+# Site settings
+title: Embedded Bootcamp Blog
+description: >-
+  A blog about embedded programming, tips, tricks, and learning resources.
+  For Embedded Programming chill.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ttpro1999.github.io/embedded_bootcamp" # the base hostname & protocol for your site
+
+# Build settings
+theme: minima
+markdown: kramdown
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author information
+author:
+  name: ttpro1999
+
+# Show excerpts on homepage
+show_excerpts: true
+
+# Pagination
+paginate: 5
