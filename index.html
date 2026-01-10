@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C_ultra - Kernel Engineering Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="assets/img/logo.svg" alt="C_ultra Logo">
+                <div>
+                    <h1>C_ultra</h1>
+                    <p>Kernel Engineering Blog</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/articles/">Articles</a></li>
+                <li><a href="https://github.com/ttpro1999/ultra_c" target="_blank">GitHub Repo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container hero">
+            <h2>Welcome to C_ultra</h2>
+            <p>Exploring RTOS, kernel design, and data structures from first principles</p>
+            <a href="/articles/" class="btn">Read the Blog</a>
+        </div>
+
+        <div class="container">
+            <h2>What is C_ultra?</h2>
+            <p>
+                <strong>C_ultra</strong> is a monorepo of independent kernel implementations, demonstrating 
+                progressively complex RTOS concepts from cooperative scheduling to microkernel architectures.
+            </p>
+            <p>
+                This blog documents the engineering journey — not just "how to implement" data structures,
+                but <strong>why</strong> we design systems the way we do in kernel-level programming.
+            </p>
+
+            <h2>Current Blog Posts</h2>
+            <ul class="post-list">
+                <li>
+                    <a href="articles/01_single_linked_list/">Single Linked List – Khi mảng không còn đủ</a>
+                    <div class="post-meta">📅 January 7, 2026 | Systems Engineering</div>
+                    <p>Understanding SLL from an ISR latency perspective: O(1) removal for real-time systems.</p>
+                </li>
+                <li>
+                    <a href="articles/02_doubly_linked_list_phase1/">Doubly Linked List Phase 1 – Khi kernel cần xóa task ngay lập tức</a>
+                    <div class="post-meta">📅 January 8, 2026 | Systems Engineering</div>
+                    <p>Intrusive pattern and circular lists: Why kernel engineers embed nodes in user data.</p>
+                </li>
+            </ul>
+
+            <h2>Architecture</h2>
+            <p>
+                C_ultra consists of:
+            </p>
+            <ul>
+                <li><strong>kernels/</strong> — Multiple RTOS implementations (00_minirtos_coop, 01_minirtos_preempt_rr, ...)</li>
+                <li><strong>labs/</strong> — Standalone data structure exercises with progressive complexity</li>
+                <li><strong>docs/</strong> — Design rationale and architecture comparisons</li>
+            </ul>
+
+            <h2>Key Philosophy</h2>
+            <blockquote>
+                "Each kernel is self-contained to illustrate specific scheduling/IPC patterns clearly. 
+                We don't share code between kernels — we learn by building independently."
+            </blockquote>
+
+            <h2>About This Blog</h2>
+            <p>
+                These are <strong>engineering essays</strong>, not tutorials. Each post:
+            </p>
+            <ul>
+                <li>Starts with a <strong>real problem</strong> (ISR latency, task scheduling constraints)</li>
+                <li>Shows <strong>naive solutions</strong> and their failures</li>
+                <li>Introduces elegant designs grounded in <strong>invariants</strong></li>
+                <li>Connects back to <strong>real RTOS</strong> (FreeRTOS, Linux, QNX, seL4)</li>
+            </ul>
+
+            <p style="margin-top: 2rem; text-align: center; color: var(--text-light);">
+                For more information, visit the <a href="https://github.com/ttpro1999/ultra_c" target="_blank">GitHub repository</a>.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 C_ultra - Kernel Engineering Blog</p>
+        <p>Exploring RTOS, system design, and data structures from first principles</p>
+    </footer>
+</body>
+</html>
